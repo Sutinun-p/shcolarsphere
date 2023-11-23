@@ -1,0 +1,85 @@
+.sum-analy .select{
+    display: flex;
+    margin-left: 12em;
+    color: #000;
+}
+.select .all,.select .select-export,.select .sort{
+    padding-right: 1em;
+}
+.select-export{
+    width: 100px;
+    margin-right: .5em;
+}
+.select-export .select-export{
+    display: flex;
+    height: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+    background-color: white;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.select-export{
+    transition: 0.5s;
+}
+.select-export.active .select-export i {
+    transform: rotate(-180deg);
+}
+.select-export .options{
+    position: absolute;
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius:4px;
+    background: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.select-export.active .options{
+    display: block;
+}
+.select-export .options .option{
+    display: flex;
+    height: 25px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 4px;
+    align-items: center;
+    background: #FFF;
+}
+.select-export .options .option:hover{
+    background: #f2f2f2;
+}
+.select-export .option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.select-export .option .option-text{
+    color: #333;
+}
+
+article{
+    display: flex;
+    margin: .5em 0 0;
+}
+tr.detail{
+    border-bottom: 1px solid #333;
+    padding-bottom: 2em;
+}
+td p.keyword{
+    margin: 0;
+    font-weight: 400;
+    
+}
+td.document-title{
+    font-weight: 600;
+}
+table tr th,table tr td{
+    padding: 0 1.5em .5em;
+}
+td.document-title .re-addfooter .read-res,td.document-title .re-addfooter .add-res{
+    padding-right: 1.5em;
+}
