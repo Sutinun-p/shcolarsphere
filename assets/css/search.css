@@ -36,7 +36,7 @@
     padding: 10px;
     margin-top: 10px;
     border-radius:4px;
-    background: #FFF;
+    background: #ff545a;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: none;
 }
@@ -50,10 +50,11 @@
     padding: 0 16px;
     border-radius: 4px;
     align-items: center;
-    background: #FFF;
+    background: #ff545a;
+    
 }
 .options .option:hover{
-    background: #f2f2f2;
+    background: #2D4263;
 }
 .option i{
     font-size: 35px;
@@ -64,7 +65,7 @@
  font-size: 16px;
 }
 .option .option-text{
-    color: #333;
+    color: #fff;
     font-size: 16px;
 }
 

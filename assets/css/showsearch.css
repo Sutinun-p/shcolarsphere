@@ -1,6 +1,6 @@
 .sum-analy .select{
     display: flex;
-    margin-left: 12em;
+    /* margin-left: 12em; */
     color: #000;
 }
 .select .all,.select .select-export,.select .sort{
