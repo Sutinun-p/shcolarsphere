@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="filters">
+        <h2>Filters</h2>
+        <div class="filter-section">
+            <h3>Year</h3>
+            <div class="year-filter">
+                <input type="radio" id="range" name="year-type" checked>
+                <label for="range">Range</label>
+                <input type="radio" id="individual" name="year-type">
+                <label for="individual">Individual</label>
+                <!-- Histogram or slider could be here -->
+                <input type="range" min="1990" max="2023" value="2000" class="slider" id="yearRange">
+                <div class="range-inputs">
+                    <input type="text" id="fromYear" placeholder="from">
+                    <input type="text" id="toYear" placeholder="to">
+                </div>
+            </div>
+        </div>
+        <div class="filter-section">
+            <h3>Author name</h3>
+            <!-- Author checkboxes would be generated dynamically -->
+            <label class="author">
+                <input type="checkbox"> Sargent, J.D. <span class="count">97</span>
+            </label>
+            <!-- More authors -->
+            <button id="showAllAuthors">Show all</button>
+        </div>
+    </div>
+    <!-- filter -->
+    <div class="filter-sidebar">
+        <h2>Filters</h2>
+        <div class="year-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="toggleButton">
+                    Year <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <label><input type="radio" name="yearOption" value="range" id="range" checked> Range</label>
+                    <label><input type="radio" name="yearOption" value="individual" id="individual"> Individual</label>
+                    <div class="year-range-selection">
+                        <label><input type="checkbox"> 2024 <span>21</span></label>
+                        <label><input type="checkbox"> 2023 <span>2,218</span></label>
+                        <label><input type="checkbox"> 2022 <span>2,711</span></label>
+                        <label><input type="checkbox"> 2021 <span>2,615</span></label>
+                        <label><input type="checkbox"> 2020 <span>2,581</span></label>
+                    </div>
+                    <button class="show-all">Show all</button>
+                    <div class="individual-year-selection">
+                        <input type="number" class="year-input" placeholder="Year">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="author-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="toggleButton">
+                    ชื่อผู้แต่ง <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="year-range-selection">
+                        <label><input type="checkbox"> รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา <span>21</span></label>
+                        <label><input type="checkbox"> อ.ดร.ศรัณย์ อภิชนตระกูล​์ <span>2,218</span></label>
+                        <label><input type="checkbox"> ผศ.ดร.พุธษดี ศิริแสงตระกูล <span>2,711</span></label>
+                        <label><input type="checkbox"> ผศ.ดร.ชิตสุธา สุ่มเล็ก​ <span>2,615</span></label>
+                        <label><input type="checkbox"> ผศ.ดร.ชานนท์ เดชสุภา<span>2,581</span></label>
+                    </div>
+                    <button class="show-all">Show all</button>
+                    <div class="individual-year-selection">
+                        <input type="number" class="year-input" placeholder="Year">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    
+    <script src="../js/test.js"></script>
+</body>
+</html>

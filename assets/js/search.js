@@ -1,16 +1,31 @@
+// Script for the first dropdown menu
 const optionMenu = document.querySelector(".select-menu"),
-  selectBtn = document.querySelector(".select-btn"),
-  option = document.querySelectorAll(".option"),
-  sBtn_text = document.querySelector(".sBtn-text");
+      selectBtn = optionMenu.querySelector(".select-btn"),
+      options = optionMenu.querySelectorAll(".option"),
+      sBtnText = optionMenu.querySelector(".sBtn-text");
 
 selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
 
-option.forEach(option =>{
-    option.addEventListener("click",()=>{
+options.forEach(option => {
+    option.addEventListener("click", () => {
         let selectedOption = option.querySelector(".option-text").innerText;
-        sBtn_text.innerText = selectedOption;
-
+        sBtnText.innerText = selectedOption;
         optionMenu.classList.remove("active");
-    })
- 
-})
+    });
+});
+
+// Script for the second dropdown menu
+const filterMenu = document.querySelector(".filter-menu"),
+      filterBtn = filterMenu.querySelector(".filter-btn"),
+      filterOptions = filterMenu.querySelectorAll(".option"),
+      filterBtnText = filterMenu.querySelector(".sBtn-text");
+
+filterBtn.addEventListener("click", () => filterMenu.classList.toggle("active"));
+
+filterOptions.forEach(option => {
+    option.addEventListener("click", () => {
+        let selectedOption = option.querySelector(".option-text").innerText;
+        filterBtnText.innerText = selectedOption;
+        filterMenu.classList.remove("active");
+    });
+});
