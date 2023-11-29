@@ -1,4 +1,7 @@
-
+.show_search{
+    margin-bottom: 2rem;
+    padding: 0 30px;
+}
 .filter-box {
     display: flex;
     align-items: center;
