@@ -199,6 +199,7 @@ body {
 nav.navbar.bootsnav {
     background-color: #fff;
     border-bottom: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
 .wrap-sticky nav.navbar.bootsnav.sticked {
