@@ -227,7 +227,7 @@ nav.navbar.bootsnav {
 .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand,
 .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover,
 .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {
-    padding: 25px 0px;
+    padding: 25px 36px;
 }
 
 /*.navbar-brand*/
