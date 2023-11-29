@@ -185,7 +185,6 @@ body {
 }
 
 /*.select-opt*/
-
 .header-top-right ul li a {
     color: #a7b0ba;
     font-size: 12px;
@@ -199,6 +198,7 @@ body {
 nav.navbar.bootsnav {
     background-color: #fff;
     border-bottom: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
 .wrap-sticky nav.navbar.bootsnav.sticked {
@@ -457,7 +457,6 @@ footer{
     display: inline-block;
     color: #afb4bf;
     font-size: 14px;
-    text-transform: capitalize;
     margin-left: 15px;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -474,7 +473,9 @@ footer{
     text-align: center;
     border-radius: 50%;
 }
-
+.footer-social a i.fa-brands{
+    color: #2D4263;
+}
 .footer-social span {
     margin-right: 15px;
     margin-left: 0;
@@ -487,9 +488,8 @@ footer{
 
 .footer-social a:hover {
     background: #ff545a;
-    color: #fff;
+    color: #fff ;
 }
-
 /*===============================
     Scroll Top
 ===============================*/
