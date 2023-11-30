@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- meta data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!--font-family-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- title of site -->
+  <title>CP:Scholarsphere</title>
+
+  <!-- For favicon png -->
+  <link rel="shortcut icon" type="image/icon" href="../images/icons/CP_icon.png" />
+
+  <!--font-awesome.min.css-->
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+  <!--linear icon css-->
+  <link rel="stylesheet" href="../css/linearicons.css">
+
+  <!--animate.css-->
+  <link rel="stylesheet" href="../css/animate.css">
+
+  <!--flaticon.css-->
+  <link rel="stylesheet" href="../css/flaticon.css">
+
+  <!--slick.css-->
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick-theme.css">
+
+  <!--bootstrap.min.css-->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <!-- bootsnav -->
+  <link rel="stylesheet" href="../css/bootsnav.css">
+
+  <!--style.css-->
+  <link rel="stylesheet" href="../css/search.css">
+  <link rel="stylesheet" href="../css/inputsearch.css">
+  <link rel="stylesheet" href="../css/showsearch.css">
+  <!-- <link rel="stylesheet" href="../css/test.css"> -->
+
+  <!--responsive.css-->
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+<!-- top-area Start -->
+<section class="top-area">
+  <div class="header-area">
+    <!-- Start Navigation -->
+      <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+          <div class="container">
+              <!-- Start Header Navigation -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                      <i class="fa fa-bars"></i>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Scholar<span>Sphere</span></a>
+              </div><!--/.navbar-header-->
+              <!-- End Header Navigation -->
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                  <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                      <li class=" scroll "><a href="./home.html">home</a></li>
+                      <li class="scroll active"><a href="./search.html">search</a></li>
+                      <li class="scroll"><a href="./ranking.html">ranking</a></li>
+            <li class="scroll login"><a href="#explore"><span>login <i class="fa-solid fa-right-to-bracket"></i></span> </a></li>
+                  </ul><!--/.nav -->
+              </div><!-- /.navbar-collapse -->
+          </div><!--/.container-->
+      </nav><!--/nav-->
+      <!-- End Navigation -->
+  </div><!--/.header-area-->
+
+</section><!-- /.top-area-->
+<!-- top-area End -->
+
+<!--welcome-hero start -->
+<section  class="welcome-hero">
+  <div class="container">
+    <div class="welcome-hero-txt">
+      <p style="color: #000;">
+        Your gateway to world-class research journals <a href="#" >Advanced search ></a>
+      </p>
+    </div>
+    <div class="welcome-hero-search-box">
+      <div class="search-box">
+        <div class="select-menu">
+          <div class="select-btn">
+            <span class="sBtn-text">All fields</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <ul class="options">
+            <li class="option"><span class="option-text">All fields</span></li>
+            <li class="option"><span class="option-text">Article title, Abstrac</span></li>
+            <li class="option"><span class="option-text">Authors</span></li>
+            <li class="option"><span class="option-text">Article</span></li>
+            <li class="option"><span class="option-text">Keywords</span></li>
+            <li class="option"><span class="option-text">All fields</span></li>
+            <li class="option"><span class="option-text">Article title, Abstrac</span></li>
+            <li class="option"><span class="option-text">Authors</span></li>
+            <li class="option"><span class="option-text">Article</span></li>
+            <li class="option"><span class="option-text">Keywords</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="welcome-hero-form">
+        <div class="single-welcome-hero-form">
+          <form action="index.html">
+            <input type="search" placeholder="Search Document" />
+          </form>
+        </div>
+      </div>
+      <div class="welcome-hero-serch">
+        <a href="./showsearch.html">
+        <button class="welcome-hero-btn" onclick="window.location.href='#'">
+          search<i data-feather="search"></i> 
+        </button>
+      </a>
+      </div>
+    </div>
+  </div>
+</section><!--/.welcome-hero-->
+<!--welcome-hero end -->
+<section class="show_search">
+  <article>
+    <div class="filters">
+      <div class="filter-sidebar">
+        <div class="document">
+          <p><span>40,000</span> document found</p>
+        </div>
+        <h2>Filters</h2>
+        <div class="year-filter">
+          <div class="dropdown">
+            <button class="dropdown-toggle" id="yearToggleButton">
+              Year <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu" id="yearDropdownMenu">
+              <div class="author-range-selection">
+                <label><input type="checkbox"> 2024 <span>2,100</span></label>
+                <label><input type="checkbox"> 2023 <span>2,218</span></label>
+                <label><input type="checkbox"> 2022 <span>2,711</span></label>
+                <label><input type="checkbox"> 2021 <span>2,615</span></label>
+                <label><input type="checkbox"> 2020 <span>2,581</span></label>
+              </div>
+              <button class="show-all">Show all</button>
+            </div>
+          </div>
+        </div>
+        <div class="author-filter">
+          <div class="dropdown">
+            <button class="dropdown-toggle" id="authorToggleButton">
+              ชื่อผู้แต่ง <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu" id="authorDropdownMenu">
+              <div class="author-range-selection">
+                <label><input type="checkbox"> รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา <span>21</span></label>
+                <label><input type="checkbox"> อ.ดร.ศรัณย์ อภิชนตระกูล​์ <span>2,218</span></label>
+                <label><input type="checkbox"> ผศ.ดร.พุธษดี ศิริแสงตระกูล <span>2,711</span></label>
+                <label><input type="checkbox"> ผศ.ดร.ชิตสุธา สุ่มเล็ก​ <span>2,615</span></label>
+                <label><input type="checkbox"> ผศ.ดร.ชานนท์ เดชสุภา<span>2,581</span></label>
+              </div>
+              <button class="show-all">Show all</button>
+            </div>
+          </div>
+        </div>
+        <div class="document-filter">
+          <div class="dropdown">
+            <button class="dropdown-toggle" id="documentToggleButton">
+              ประเภทเอกสาร <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu" id="documentDropdownMenu">
+              <div class="document-range-selection">
+                <label><input type="checkbox"> บทความ <span>21</span></label>
+                <label><input type="checkbox"> เอกสารการประชุม<span>2,218</span></label>
+                <label><input type="checkbox"> หนังสือ <span>2,711</span></label>
+                <label><input type="checkbox"> รายงาน <span>2,615</span></label>
+                <label><input type="checkbox"> ทบทวน <span>2,581</span></label>
+              </div>
+              <button class="show-all">Show all</button>
+            </div>
+          </div>
+        </div>
+        <div class="source-filter">
+          <div class="dropdown">
+            <button class="dropdown-toggle" id="sourceToggleButton">
+              ชื่อแหล่งที่มา <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu" id="sourceDropdownMenu">
+              <div class="source-range-selection">
+                <label><input type="checkbox"> บันทึกการบรรยายในวิทยาการ <span>21</span></label>
+                <label><input type="checkbox"> วารสารแห่งวิสัยทัศน์<span>2,218</span></label>         <label><input type="checkbox"> วารสารวิจัยธุรกิจ <span>2,711</span></label>
+              <label><input type="checkbox"> รายงานทางวิทยาศสตร์ <span>2,615</span></label>
+              <label><input type="checkbox"> รายงานทางวิทยาศสตร์ <span>2,581</span></label>
+            </div>
+            <button class="show-all">Show all</button>
+          </div>
+        </div>
+      </div>
+      <div class="affiliation-filter">
+        <div class="dropdown">
+          <button class="dropdown-toggle" id="affiliationToggleButton">
+            สังกัด <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-menu" id="affiliationDropdownMenu">
+            <div class="affiliation-range-selection">
+              <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น <span>21</span></label>
+              <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น<span>2,218</span></label>
+              <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น <span>2,711</span></label>
+              <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น <span>2,615</span></label>
+              <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น <span>2,581</span></label>
+            </div>
+            <button class="show-all">Show all</button>
+          </div>
+        </div>
+      </div>
+      <div class="key-filter">
+        <div class="dropdown">
+          <button class="dropdown-toggle" id="keyToggleButton">
+            คำสำคัญ <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-menu" id="keyDropdownMenu">
+            <div class="key-range-selection">
+              <label><input type="checkbox"> บทความ <span>21</span></label>
+              <label><input type="checkbox"> มนุษย์<span>2,218</span></label>
+              <label><input type="checkbox"> มนุษย์ <span>2,711</span></label>
+              <label><input type="checkbox"> มนุษย์ <span>2,615</span></label>
+              <label><input type="checkbox"> มนุษย์ <span>2,581</span></label>
+            </div>
+            <button class="show-all">Show all</button>
+          </div>
+        </div>
+      </div>
+      <div class="language-filter">
+        <div class="dropdown">
+          <button class="dropdown-toggle" id="languageToggleButton">
+            ภาษา <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-menu" id="languageDropdownMenu">
+            <div class="language-range-selection">
+              <label><input type="checkbox"> อังกฤษ <span>21</span></label>
+              <label><input type="checkbox"> เยอรมัน<span>2,218</span></label>
+              <label><input type="checkbox"> ฝรั่งเศส <span>2,711</span></label>
+              <label><input type="checkbox"> จีน <span>2,615</span></label>
+              <label><input type="checkbox"> ไทย <span>2,581</span></label>
+            </div>
+            <button class="show-all">Show all</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <table class="contant">
+    <tr class="head">
+      <th>No</th>
+      <th>Document title</th>
+      <th>Authors</th>
+      <th>Source</th>
+      <th>Year</th>
+    </tr>
+    <tr class="detail">
+      <td class="number"><input type="checkbox" name="#" id="#"><span>1</span></td>
+      <td class="document-title">
+        <p class="keyword">keyword</p>
+        Alcohol, tobacco, junk food and sport in series and films of Netflix: Content analysis and its possible
+        impacts in society | Alcohol, tabaco, comida basura y deporte en series y películas de Netflix: Análisis de
+        contenido y sus posibles impactos en la sociedad
+        <div class="re-addfooter">
+          <span class="read-res">อ่านบทคัดย่อ <i class="fa-solid fa-angle-down"></i></span>
+          <span class="add-res">รายการโปรด <i class="fa-solid fa-square-plus"></i></span>
+        </div>
+      </td>
+      <td>Peña Sarrionandia, M.,
+        Sarrionandia Peña, A.</td>
+      <td>Revista Latina de Comunicacion Social, 2024(82), pp. 1–21</td>
+      <td>2024</td>
+    </tr>
+    <tr class="detail">
+      <td class="number"><input type="checkbox" name="#" id="#"><span>2</span></td>
+      <td class="document-title">
+        <p class="keyword">keyword</p>
+        Alcohol, tobacco, junk food and sport in series and films of Netflix: Content analysis and its possible
+        impacts in society | Alcohol, tabaco, comida basura y deporte en series y películas de Netflix: Análisis de
+        contenido y sus posibles impactos en la sociedad
+        <div class="re-addfooter"><span class="read-res">อ่านบทคัดย่อ <i class="fa-solid fa-angle-down"></i></span>
+          <span class="add-res">รายการโปรด <i class="fa-solid fa-square-plus"></i></span>
+        </div>
+      </td>
+      <td>Peña Sarrionandia, M.,
+        Sarrionandia Peña, A.</td>
+      <td>Revista Latina de Comunicacion Social, 2024(82), pp. 1–21</td>
+      <td>2024</td>
+    </tr>
+  </table>
+</article>
+</section>
+    
+
+  <!--footer start-->
+  <footer class="footer">
+    <div class="container">
+      <div class="hm-footer-copyright">
+        <div class="row">
+          <div class="col-sm-5">
+            <p>
+              &copy;Copyright © 2022 Research by <a href="https://www.themesine.com/">College of Computing KKU</a>
+            </p><!--/p-->
+          </div>
+          <div class="col-sm-7">
+            <div class="footer-social">
+              <span><i class="fa fa-phone"> 043-009700 ต่อ 44456, 44459, 44457</i></span>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div><!--/.hm-footer-copyright-->
+    </div><!--/.container-->
+
+    <div id="scroll-Top">
+      <div class="return-to-top">
+        <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
+          data-original-title="Back to Top" aria-hidden="true"></i>
+      </div>
+
+    </div><!--/.scroll-Top-->
+
+  </footer><!--/.footer-->
+  <!--footer end-->
+
+  <!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+  <script src="../js/jquery.js"></script>
+
+  <!--modernizr.min.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  <!--bootstrap.min.js-->
+  <!-- <script src="../js/bootstrap.min.js"></script> -->
+
+  <!-- bootsnav js -->
+  <script src="../js/bootsnav.js"></script>
+
+  <!--feather.min.js-->
+  <script src="../js/feather.min.js"></script>
+
+  <!-- counter js -->
+  <script src="../js/jquery.counterup.min.js"></script>
+  <script src="../js/waypoints.min.js"></script>
+
+  <!--slick.min.js-->
+  <script src="../js/slick.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <!--Custom JS-->
+  <script src="../js/custom.js"></script>
+
+  <!-- search JS  -->
+  <script src="../js/search.js"></script>
+
+  <script src="../js/test.js"></script>
+</body>
+
+</html>

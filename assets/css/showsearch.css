@@ -1,0 +1,188 @@
+.show_search{
+    margin-bottom: 5rem;
+    padding: 0 30px;
+}
+.year-filter,.author-filter,.document-filter,.source-filter,.affiliation-filter,.key-filter,.language-filter{
+    border-bottom:  1px solid #2D4263;
+}
+
+.filter-sidebar {
+    width: 400px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: none;
+    height: auto;
+}
+
+.filter-sidebar h2 {
+    color: #000;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.filters .dropdown .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filters .dropdown-toggle i {
+    transition: transform 0.3s ease;
+}
+.filters .dropdown-toggle.active i {
+    transform: rotate(-180deg);
+}
+.filters .dropdown-menu {
+    display: none;
+    position: relative;
+    width: calc(100% - 0px); 
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1000;
+}
+
+.filters .dropdown-menu label {
+    display: block;
+    color: #000;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.filters .dropdown-menu label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.filters .dropdown-menu label span {
+    float: right;
+    font-size: 12px;
+    padding: 3px 6px;
+    background-color: #2D4263;
+    border-radius: 12px;
+    color: #bcbcbc;
+}
+
+.dropdown .show-all {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #e9e9e9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.document p,button{
+    color: #000;
+}
+/* tr.detail td.number{
+    display: table-cell;
+text-align: center;
+vertical-align: middle;
+} */
+table.contant tr th{
+    color: #000;
+}
+
+.select .all,.select .select-export,.select .sort{
+    padding-right: 1em;
+}
+.select-export{
+    width: 100px;
+    margin-right: .5em;
+}
+.select-export .select-export{
+    display: flex;
+    height: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+    background-color: white;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.select-export{
+    transition: 0.5s;
+}
+.select-export.active .select-export i {
+    transform: rotate(-180deg);
+}
+.select-export .options{
+    position: relative;
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius:4px;
+    background: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.select-export.active .options{
+    display: block;
+}
+.select-export .options .option{
+    display: flex;
+    height: 25px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 4px;
+    align-items: center;
+    background: #FFF;
+}
+.select-export .options .option:hover{
+    background: #f2f2f2;
+}
+.select-export .option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.select-export .option .option-text{
+    color: #333;
+}
+
+article{
+    display: flex;
+    margin: .5em 0 0;
+}
+tr.detail{
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 2em;
+}
+td input{
+    padding: 0;
+}
+td p.keyword{
+    margin: 0;
+    font-weight: 400;
+   color: #000;
+}
+td.document-title{
+    font-weight: 600;
+
+}
+table tr th,table tr td{
+    padding: 0 1.5em .5em;
+    color: #000;
+}
+td.document-title .re-addfooter .read-res,td.document-title .re-addfooter .add-res{
+    padding-right: 1.5em;
+}
+
+
+
+

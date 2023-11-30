@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        
+</head>
+<body>
+    <section class="filters">
+       <!-- filter -->
+    <div class="filter-sidebar">
+        <h2>Filters</h2>
+        <div class="year-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="yearToggleButton">
+                    Year <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" id="yearDropdownMenu">
+                    <div class="author-range-selection">
+                        <label><input type="checkbox"> 2024 <span>2,100</span></label>
+                        <label><input type="checkbox"> 2023 <span>2,218</span></label>
+                        <label><input type="checkbox"> 2022 <span>2,711</span></label>
+                        <label><input type="checkbox"> 2021 <span>2,615</span></label>
+                        <label><input type="checkbox"> 2020 <span>2,581</span></label>
+                    </div>
+                    <button class="show-all">Show all</button>
+                </div>
+            </div>
+        </div>
+        <div class="author-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="authorToggleButton">
+                    ชื่อผู้แต่ง <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" id="authorDropdownMenu">
+                    <div class="author-range-selection">
+                        <label><input type="checkbox"> รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา <span>21</span></label>
+                        <label><input type="checkbox"> อ.ดร.ศรัณย์ อภิชนตระกูล​์ <span>2,218</span></label>
+                        <label><input type="checkbox"> ผศ.ดร.พุธษดี ศิริแสงตระกูล <span>2,711</span></label>
+                        <label><input type="checkbox"> ผศ.ดร.ชิตสุธา สุ่มเล็ก​ <span>2,615</span></label>
+                        <label><input type="checkbox"> ผศ.ดร.ชานนท์ เดชสุภา<span>2,581</span></label>
+                    </div>
+                    <button class="show-all">Show all</button>
+                </div>
+            </div>
+        </div>
+        <div class="document-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="documentToggleButton">
+                    ประเภทเอกสาร <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" id="documentDropdownMenu">
+                    <div class="document-range-selection">
+                        <label><input type="checkbox"> บทความ <span>21</span></label>
+                        <label><input type="checkbox"> เอกสารการประชุม<span>2,218</span></label>
+                        <label><input type="checkbox"> หนังสือ <span>2,711</span></label>
+                        <label><input type="checkbox"> รายงาน <span>2,615</span></label>
+                        <label><input type="checkbox"> ทบทวน <span>2,581</span></label>
+                    </div>
+                    <button class="show-all">Show all</button>
+                </div>
+            </div>
+        </div>
+        <div class="source-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="sourceToggleButton">
+                    ชื่อแหล่งที่มา <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" id="sourceDropdownMenu">
+                    <div class="source-range-selection">
+                        <label><input type="checkbox"> บันทึกการบรรยายในวิทยาการ <span>21</span></label>
+                        <label><input type="checkbox"> วารสารแห่งวิสัยทัศน์<span>2,218</span></label>
+                        <label><input type="checkbox"> วารสารวิจัยธุรกิจ <span>2,711</span></label>
+                        <label><input type="checkbox"> รายงานทางวิทยาศสตร์ <span>2,615</span></label>
+                        <label><input type="checkbox"> รายงานทางวิทยาศสตร์ <span>2,581</span></label>
+                    </div>
+                    <button class="show-all">Show all</button>
+                </div>
+            </div>
+        </div>
+        <div class="affiliation-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="affiliationToggleButton">
+                    สังกัด <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" id="affiliationDropdownMenu">
+                    <div class="affiliation-range-selection">
+                        <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น <span>21</span></label>
+                        <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น<span>2,218</span></label>
+                        <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น <span>2,711</span></label>
+                        <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น <span>2,615</span></label>
+                        <label><input type="checkbox"> มหาวิทยาลัยขอนแก่น <span>2,581</span></label>
+                    </div>
+                    <button class="show-all">Show all</button>
+                </div>
+            </div>
+        </div>
+        <div class="key-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="keyToggleButton">
+                    คำสำคัญ <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" id="keyDropdownMenu">
+                    <div class="key-range-selection">
+                        <label><input type="checkbox"> บทความ <span>21</span></label>
+                        <label><input type="checkbox"> มนุษย์<span>2,218</span></label>
+                        <label><input type="checkbox"> มนุษย์ <span>2,711</span></label>
+                        <label><input type="checkbox"> มนุษย์ <span>2,615</span></label>
+                        <label><input type="checkbox"> มนุษย์ <span>2,581</span></label>
+                    </div>
+                    <button class="show-all">Show all</button>
+                </div>
+            </div>
+        </div>
+        <div class="language-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="languageToggleButton">
+                    ภาษา <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" id="languageDropdownMenu">
+                    <div class="language-range-selection">
+                        <label><input type="checkbox"> อังกฤษ <span>21</span></label>
+                        <label><input type="checkbox"> เยอรมัน<span>2,218</span></label>
+                        <label><input type="checkbox"> ฝรั่งเศส <span>2,711</span></label>
+                        <label><input type="checkbox"> จีน <span>2,615</span></label>
+                        <label><input type="checkbox"> ไทย <span>2,581</span></label>
+                    </div>
+                    <button class="show-all">Show all</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    </section>
+   
+    <script src="../js/test.js"></script>
+</body>
+</html>
